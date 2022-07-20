@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utilities.ListenerInterface"/>
+  </listeners>
+  <test thread-count="5" name="smokeTest(failed)">
+    <classes>
+      <class name="test.TC002_Signup">
+        <methods>
+          <include name="tearDown"/>
+          <include name="signup"/>
+          <include name="inisetup"/>
+        </methods>
+      </class> <!-- test.TC002_Signup -->
+    </classes>
+  </test> <!-- smokeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
